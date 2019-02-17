@@ -1,21 +1,15 @@
 <p align="center">
     <h1 align="center">PopularPHP</h1>
     <br>
-    An application that displays popular GitHub PHP projects. 
+    An application that displays popular GitHub PHP projects.
 </p>
+
 
 
 APPLICATION STACK
 -----------------
 
 PopularPHP uses the [Yii 2](http://www.yiiframework.com/) framework.
-
-
-
-REQUIREMENTS
-------------
-
-The minimum requirement by this project template that your Web server supports PHP 5.4.0.
 
 
 
