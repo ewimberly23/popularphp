@@ -7,7 +7,6 @@ use yii\widgets\DetailView;
 /* @var $model app\models\Repo */
 
 $this->title = $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'PHP Projects', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
@@ -18,7 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            // 'id',
+
             'repo_id',
             'name',
             'url:url',
@@ -32,6 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     return '<i class="fa fa-star" style="color:#DAA520;" aria-hidden="true"></i> ' . $model->star_count;
                 },
             ]
+
         ],
     ]) ?>
 

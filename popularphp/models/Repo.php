@@ -58,4 +58,27 @@ class Repo extends \yii\db\ActiveRecord
         ];
     }
 
+    /**
+     * Refreshes data in tables
+     */
+    public function refresh()
+    {
+        $h = popen(Yii::getAlias('@app') . '/yii git-hub', 'r');
+        $output = '';
+        while (!feof($h)) {
+            $output .= fgets($h);
+        }
+        $status = pclose($h);
+    }
+
+    /**
+     * Get latest update timestamp
+     * @return integer
+     */
+    public static function lastUpdateTimestamp()
+    {
+        $repo = Repo::find()->one();
+        return strtotime($repo->updated_at);
+    }
+
 }

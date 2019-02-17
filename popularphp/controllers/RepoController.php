@@ -46,6 +46,15 @@ class RepoController extends Controller
     }
 
     /**
+     * Force a data refresh
+     * @return json
+     */
+    public function actionRefreshRepoList()
+    {
+        Repo::refresh();
+    }
+
+    /**
      * Displays a single Repo model.
      * @param integer $id
      * @return mixed

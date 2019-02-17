@@ -14,6 +14,11 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
+        'assetManager' =>  [
+            'assetMap' => [
+                'angular.js' => 'https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js'
+            ],
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'vZ5FbrT8FEzsmTNXPX2HlXfTqov4Q1c5',

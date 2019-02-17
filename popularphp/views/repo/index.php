@@ -2,31 +2,37 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\widgets\Pjax;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\RepoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
+
+\app\assets\RepoAsset::register($this);
 
 $this->title = 'PHP Projects';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="repo-index">
 
+
+    <?php Pjax::begin(); ?>
     <h1>
         <?= Html::encode($this->title) ?>
+        <?= Html::a('<i id="loading-gif" class="fas fa-spinner fa-spin" style="display:none;margin-right:12px;"></i>Update List', [], [
+            'id' => 'fetch-more',
+            'class' => ['btn btn-default pull-right'],
+            'style' => ['margin-top:2px;']]
+        ) ?>
     </h1>
-    
+
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
-        // 'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            // 'repo_id',
             'name',
             'url:url',
-            // 'created_date',
-            // 'last_push_date',
             'description:ntext',
             [
                 'attribute' => 'star_count',
@@ -43,5 +49,6 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ],
     ]); ?>
+    <?php Pjax::end(); ?>
 
 </div>
