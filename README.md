@@ -13,6 +13,14 @@ PopularPHP uses the [Yii 2](http://www.yiiframework.com/) framework.
 
 
 
+INSTALLATION
+------------
+
+If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
+at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
+
+
+
 CONFIGURATION
 -------------
 
@@ -34,23 +42,31 @@ return [
 - PopularPHP won't create the database for you, this has to be done manually before you can access it.
 
 
+
 STARTUP
 -------
 
-1. Initialize the database tables:
+1. Initialize vendor dir:
+
+    ```
+    popularphp/composer install
+    ```
+
+2. Initialize the database tables:
 
     ```
     popularphp/yii migrate
     ```
 
-2. Load initial data:
+3. Load initial data:
 
     ```
     popularphp/yii git-hub
     ```
 
-3. Start web server:
+4. Start web server:
 
     ```
     popularphp/yii serve
     ```
+
