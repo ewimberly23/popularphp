@@ -9,7 +9,9 @@
 APPLICATION STACK
 -----------------
 
-PopularPHP uses the [Yii 2](http://www.yiiframework.com/) framework.
+PopularPHP uses:
+- [Yii 2](http://www.yiiframework.com/) framework
+- [Mysql](https://dev.mysql.com/downloads/mysql/) (Version 5.7.* or greater)
 
 
 
@@ -26,6 +28,12 @@ CONFIGURATION
 
 ### Database
 
+Create your database. Be sure to use the following default settings:
+
+```mysql
+CREATE DATABASE github CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
 Edit the file `popularphp/config/db.php` with real data, for example:
 
 ```php
@@ -37,9 +45,6 @@ return [
     'charset' => 'utf8mb4',
 ];
 ```
-
-**NOTES:**
-- PopularPHP won't create the database for you, this has to be done manually before you can access it.
 
 
 
