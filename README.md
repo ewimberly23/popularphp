@@ -49,24 +49,25 @@ STARTUP
 1. Initialize vendor dir:
 
     ```
-    popularphp/composer install
+    cd popularphp
+    composer install
     ```
 
 2. Initialize the database tables:
 
     ```
-    popularphp/yii migrate
+    yii migrate
     ```
 
 3. Load initial data:
 
     ```
-    popularphp/yii git-hub
+    yii git-hub
     ```
 
 4. Start web server:
 
     ```
-    popularphp/yii serve
+    yii serve
     ```
 

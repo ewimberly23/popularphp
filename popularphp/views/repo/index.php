@@ -11,7 +11,7 @@ use yii\widgets\Pjax;
 \app\assets\RepoAsset::register($this);
 
 $this->title = 'PHP Projects';
-$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs']['homeLink'] = null;
 ?>
 <div class="repo-index">
 
