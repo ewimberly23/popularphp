@@ -18,7 +18,7 @@ class GitHub
 
     /**
      * Initialize resource
-     * @param string $url (optional)
+     * @param string $url
      */
     function __construct(string $url) {
         if (! $this->validateURL($url)) {
