@@ -77,7 +77,7 @@ STARTUP
     yii migrate
     ```
 
-3. Load initial data:
+3. Load initial data: (optional)
 
     ```
     yii git-hub
