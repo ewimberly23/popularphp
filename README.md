@@ -11,7 +11,7 @@ APPLICATION STACK
 
 PopularPHP uses:
 - [Yii 2](http://www.yiiframework.com/) framework
-- [Mysql](https://dev.mysql.com/downloads/mysql/) (Version 5.7.* or greater)
+- [Mysql](https://dev.mysql.com/downloads/mysql/)
 
 
 
@@ -21,7 +21,7 @@ INSTALLATION
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 
-Install [Mysql](https://dev.mysql.com/downloads/mysql/) if you do not have it.
+Install [Mysql](https://dev.mysql.com/downloads/mysql/), version 5.7.* or greater, if you do not have it.
 
 
 
