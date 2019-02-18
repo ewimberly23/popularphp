@@ -18,6 +18,8 @@ PopularPHP uses:
 INSTALLATION
 ------------
 
+[PHP](http://php.net/downloads.php) 7.0+
+
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 
