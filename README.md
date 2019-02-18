@@ -19,6 +19,7 @@ INSTALLATION
 ------------
 
 [PHP](http://php.net/downloads.php) 7.0+
+- Be sure your version includes [cURL](https://secure.php.net/manual/en/curl.installation.php)
 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
