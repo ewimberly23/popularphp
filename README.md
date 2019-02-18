@@ -37,6 +37,11 @@ Create your database. Be sure to use the following default settings:
 ```mysql
 CREATE DATABASE github CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
+or
+```mysql
+CREATE DATABASE github CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
+```
+
 
 Edit the file `popularphp/config/db.php` with real data, for example:
 
