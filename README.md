@@ -21,6 +21,8 @@ INSTALLATION
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 
+Install [Mysql](https://dev.mysql.com/downloads/mysql/) if you do not have it.
+
 
 
 CONFIGURATION
