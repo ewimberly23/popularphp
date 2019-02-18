@@ -56,6 +56,9 @@ return [
 ];
 ```
 
+**NOTES:** 
+- The charset `utf8mb4` and collation `utf8mb4_unicode_ci/utf8mb4_bin` are critical
+
 
 
 STARTUP
