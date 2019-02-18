@@ -11,7 +11,7 @@ APPLICATION STACK
 
 PopularPHP uses:
 - [Yii 2](http://www.yiiframework.com/) framework
-- [Mysql](https://dev.mysql.com/downloads/mysql/)
+- Mysql
 
 
 
